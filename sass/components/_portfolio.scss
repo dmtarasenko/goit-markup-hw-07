@@ -1,0 +1,103 @@
+/* PORTFOLIO */
+/* MAIN */
+/* OUR PORTFOLIO */
+
+.filter-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.filter-btn {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: #212121;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+
+  transition: background-color 250ms var(--main-timing-function),
+    color 250ms var(--main-timing-function), box-shadow 250ms var(--main-timing-function);
+}
+.filter-list > .filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #ffffff;
+  background-color: var(--active-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-list > .projects-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.projects-list > .projects-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+.projects-item {
+  flex-basis: calc((100%- (30px * 2) / 3));
+}
+.projects-link {
+  display: block;
+
+  transition: box-shadow 250ms var(--main-timing-function);
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-link-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.project-wrap-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms var(--main-timing-function);
+}
+.projects-link:hover .project-wrap-text,
+.projects-link:focus .project-wrap-text {
+  transform: translateY(0);
+}
+.project-description {
+  border-right: 1px solid#eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+.projects-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+}
+.projects-item-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  margin-top: 4px;
+}
