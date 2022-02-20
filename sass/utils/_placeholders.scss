@@ -1,58 +1,5 @@
-/* RESET STYLES*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-.logo-link,
-.nav-link,
-.email-link,
-.phone-link,
-.geo-link,
-.projects-link {
+%resets-link {
   text-decoration: none;
   font-style: normal;
   color: inherit;
-}
-.nav-list,
-.team-list,
-.works-list,
-.advantages-list,
-.footer-address-list,
-.header-address-list,
-.filter-list,
-.projects-list,
-.social-link-list,
-.clients-list,
-.footer-social-link-list {
-  list-style-type: none;
-}
-.filter-btn,
-.hero-btn {
-  font-family: inherit;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* PATTERN */
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
 }

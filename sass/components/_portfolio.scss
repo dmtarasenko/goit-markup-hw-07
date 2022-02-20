@@ -50,6 +50,7 @@
   flex-basis: calc((100%- (30px * 2) / 3));
 }
 .projects-link {
+  @extend %resets-link;
   display: block;
 
   transition: box-shadow 250ms var(--main-timing-function);
