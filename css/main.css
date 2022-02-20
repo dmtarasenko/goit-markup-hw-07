@@ -794,18 +794,17 @@ header > .container {
   -webkit-transition: border-color 250ms var(--main-timing-function);
   transition: border-color 250ms var(--main-timing-function);
 }
-.form__input:focus {
+.form__input:not(:-moz-placeholder-shown) {
   border-color: #2196f3;
   outline: none;
 }
-.form__input:not(:-moz-placeholder-shown) {
-  border-color: #2196f3;
-}
 .form__input:not(:-ms-input-placeholder) {
   border-color: #2196f3;
+  outline: none;
 }
-.form__input:not(:placeholder-shown) {
+.form__input:focus, .form__input:not(:placeholder-shown) {
   border-color: #2196f3;
+  outline: none;
 }
 
 .form__wrapper {
@@ -823,13 +822,13 @@ header > .container {
   -webkit-transition: fill 250ms var(--main-timing-function);
   transition: fill 250ms var(--main-timing-function);
 }
-.modal-form-input:not(:-moz-placeholder-shown) + .form__icon {
+.form__input:not(:-moz-placeholder-shown) + .form__icon {
   fill: #2196f3;
 }
-.modal-form-input:not(:-ms-input-placeholder) + .form__icon {
+.form__input:not(:-ms-input-placeholder) + .form__icon {
   fill: #2196f3;
 }
-.modal-form-input:not(:placeholder-shown) + .form__icon {
+.form__input:not(:placeholder-shown) + .form__icon, .form__input:focus + .form__icon {
   fill: #2196f3;
 }
 
@@ -889,18 +888,17 @@ header > .container {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.form__textarea:focus {
+.form__textarea:not(:-moz-placeholder-shown) {
   border-color: #2196f3;
   outline: none;
 }
-.form__textarea:not(:-moz-placeholder-shown) {
-  border-color: #2196f3;
-}
 .form__textarea:not(:-ms-input-placeholder) {
   border-color: #2196f3;
+  outline: none;
 }
-.form__textarea:not(:placeholder-shown) {
+.form__textarea:focus, .form__textarea:not(:placeholder-shown) {
   border-color: #2196f3;
+  outline: none;
 }
 
 .form__checkbox-label {
